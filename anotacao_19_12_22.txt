@@ -1,0 +1,14 @@
+==> HOOKS
+Hooks nada mais é do que uma função.
+
+* Um componente possui estados (useState)
+
+* Pro reac, um estado nunca é mudado, ele é realmente alterado (sobreescrito)
+
+* UseEffect
+Hook que trabalha com o ciclo de vida do componente.
+- É uma função fazendo algo
+
+=> useMemo
+memoriza algum calculo, valor, que não precisamos ficar reenderizando
+

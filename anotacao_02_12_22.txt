@@ -1,0 +1,13 @@
+https://fonts.google.com/specimenTab?standard-styles
+
+* foi escolhida a fonte rotobo, e selecionado as opções light 300, medium 500, bold 700
+
+<section></section = essa tag e usada quando vamos definir um conteudo
+
+rem é uma medida relativa.
+1rem é igual ao tamanho padrão da fonte da raiz(root) do documento, normalmente 16px, logo 1rem é igual à 16px.
+
+* box-sizing = Especifica o comportamento das propriedades 'width' e 'height'. 
+Se você definir box-sizing: border-box;um elemento, o preenchimento e a borda serão incluídos na largura e na altura:
+
+Ambos os divs são do mesmo tamanho

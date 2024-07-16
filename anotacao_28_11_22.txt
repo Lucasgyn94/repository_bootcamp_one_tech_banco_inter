@@ -1,0 +1,10 @@
+## addEventListener
+
+addEventListener = este metodo adiciona um ouvinte de evento, para que sempre que ocorrer determinada determinado clique/ação em um botão, a função que estiver dentro do mesmo será executada.
+$EX:
+btnTeste.addEventListener("click", function() {})
+
+## Normalize
+é um css que padroniza todo o estilo inicial
+$
+npm install normalize.css

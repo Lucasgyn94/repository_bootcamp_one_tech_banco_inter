@@ -1,0 +1,137 @@
+* media query sizes bootstrap = dimensões recomendadas
+
+* o que é uma api? 
+É um como servidor, que está servindo dados para gente.
+
+* se você vai trabalhar com web ou programação, é importante entender como o protocolo http funciona.
+
+* o protocolo http e cliente-servidor, pois o cliente faz o pedido, o servidor vai processar esse pedido e vai devolver uma resposta.
+
+*path = url -> é o ip e porta do servidor que iremos requisitar os dados. É o endereço do recurso que agente quer.
+${IP / endereço} / ${path = caminho de identificação do recurso}
+ex:
+IP: https://pokeapi.co
+    http://127.0.0.1:3000
+
+-> https://pokeapi.co/api/v2/pokemon
+o que vem depois do ip e a identificação de nosso recurso, o que queremos dele, nesse caso, queremos a api, na v2 e o recurso pokemon, que tras a listagem de pokemons.
+
+* sempre que fazemos uma requisição pro servidor, essa requisição tem um tipo, que pode ser do tipo GET, POST, PUT, DELETE, PATCH
+GET = BUSCAR UM RECURSO
+POST = INSERIR UM NOVO RECURSO
+PUT = ATUALIZAR UM RECURSO
+DELETE = DELETAR UM RECURSO
+
+* QUERY STRING = Descrição de busca. busca de string.
+ex: quero buscar todos os pokemons de uma determinada classe. é um filtro. Tudo que vem depois de um ponto de interrogação ? é uma query string, e ela sempre terá chave é valor.
+ex: 
+https://pokeapi.co/api/v2/pokemon?
+
+-> buscar todos os pokemons do tipo grass
+https://pokeapi.co/api/v2/pokemon?type=grass
+-> se eu quiser outro argumento, e so concatenar
+https://pokeapi.co/api/pokemon?type=grass&nome=i
+
+==> OBSERVAÇÃO
+* AS DUAS FORMAS DE PASSAGEM DE PARAMETRO PARA API:
+- 1º através do próprio path / caminho
+$
+https://pokeapi.co/api.v2/pokemon/1
+
+- 2º Atraves da Query String (? atráves dos argumentos chave e valor)
+$
+https://pokeapi.co/api/v2/pokemon?offset=20&limite=20
+
+
+** HEADERS SÃO UMA ESPÉCIE DE CONFIGURAÇÃO DA NOSSA REQUISIÇÃO. E NELES PASSAMOS DADOS QUE FAZEM SENTIDO PARA CONFIGURAR A REQUISIÇÃO
+
+** Request Headers
+é a configuração  da nossa api
+
+** response Headers
+como a resposta está configurada
+
+** Body
+ultima forma de passar e receber informação.
+E o corpo da nossa requisição, e o dado que queremos trafegar em nossa requisição.
+Para se fazer um POST, devemos fazer em nosso body.
+Por exemplo, colocamos no nosso Request Headers que o nosso tipo de conteudo e application json e no body passamos o json, fica da seguinte forma:
+$
+Request Headers
+content-type: application/json
+
+Body
+{
+	"name":"Teste"
+
+}
+
+OBS:
+PRO POST, PUT, FAZ MAIS ENVIAR UM BODY
+
+** UMA REQUISIÇÃO É COMPOSTA DE URL, REQUEST HEADERS, RESPONSE HEADERS E REQUEST BODY
+
+** UMA RESPOSTA DO SERVIDOR VAI TER:
+-> UM STATUS CODE: E UM NÚMERO QUE INDICA O QUE ACONTECEU COM NOSSA REQUISIÇÃO.
+
+- A família 200 significa sucesso
+- A família 300 significa redirect
+- A família 200 significa erro por parte do cliente
+- A família 500 significa erro interno do servidor
+
+
+** Fetch API
+É uma biblioteca já integrada com o javascript do browser. Ela fornece uma interface para buscar recursos (por exemplo, em toda a rede). Em outras palavras, ela fornece uma interface javascript para acessar e manipular partes do protocolo, como solicitações e resposta.
+
+==> DOCUMENTAÇÃO
+
+## digitar no google
+
+fetch api get json
+
+==> OBS
+
+-> FETCH()
+
+*Aqui passamos a url ou a definição de uma request */
+
+* O fetch nos retorna uma Promise
+
+==> PROCESSAMENTO ASSINCRONO
+É um prossamento que vai ser executado e que eu não tenho a resposta de imediato, uma hora eu vou ter a resposta disse, e a Promise é a promessa de um resultado, e o resultado da response
+
+==> Para processar o resultado de uma Promise usamos o metodo then()
+$
+fetch().then()
+
+* o metodo then() recebe uma função, com uma response/resposta sobre parametro
+
+$
+fetch(url).then(function(response) {
+	console.log(response)
+})
+
+** INTERFACE DE UMA REQUISICAO
+fetch(url)
+    .then(function(response) {
+        console.log(response);
+    })
+    .catch(function(error) {
+        console.log(error);
+    })
+    .finally(function(){
+        console.log('Requisição concluída');
+    })
+
+
+** PARA MANIPULAR UM OBJETO WEB NO JAVASCRIPT DEVEMOS CONVERTELO PARA UM JSON
+
+** AERO FUNCTION
+() => {}
+ex:
+$
+fetch(url)
+	.then((response) => {
+		console.log(response)
+}
+

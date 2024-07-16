@@ -1,0 +1,16 @@
+==> convertendo projeto js para typescript
+
+1º passo
+
+$
+yarn add typescript @types/node @types/react @types/react-dom @types/jest -D
+
+2º passo
+npx tsc --init
+
+
+
+Tela de login com validação de email verdadeiro e no se a senha tem no mínimo 6 caracteres. Utilizamos para o projeto o typescript juntamente com a bibiloteca yup, além de estilizar nossos componentes com styled componentes
+
+
+Trago aqui um projeto de minha autoria escrito em vba utilizando a biblioteca Selenium. O objetivo do programa foi automatizar um ciclo de tarefas feito diariamente pelos operadores para reset dos mais de 7000 aparelhos de telecomunicação da empresa onde atualmente eu trabalho. Não sou um expert na linguagem, porém com um pouco de estudo na documentação e dedicação, o projeto foi concluído com sucesso!

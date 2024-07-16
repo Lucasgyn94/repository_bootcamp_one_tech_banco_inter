@@ -1,0 +1,69 @@
+=> Node
+Node.js é m runtime (motor) de JavaScript criado pelo desenvolvedor Ryan Dahl em 2009. O node.js, foi desenvolvido em cima do motor javascript v8 - engine criada pelo google e utilizada nos navegadores chrome
+
+=> NPM = Node Package Manager
+é o gerenciador de pacote padrão do node. Ele é utilizado como gerenciamento de pacotes, fluxo de trabalho em linguagens de programação e ferramenta para construção de front-ends em aplicativos e websites.
+
+=> React DevTools
+É uma extensão disponível para chrome, firefox e também como um aplicativo independente que permite inspeccionar a hierarquia de componentes do React nas ferramentas do desenvolvedor no navegador.
+
+=> eslint
+padroniza o codigo
+
+=================================
+
+==> O que é o React?
+É uma biblioteca javascript para a criação de interfaces de usuário.
+
+==> Biblioteca
+são recursos utilizados para facilitar a escrita de nosso código. A ideia é compartilhar soluções por meio de funções ou métodos.
+ex:
+*moment.js
+*chart.js
+*voca
+*mo.js
+*react.js
+
+==> Framework
+Framework consiste basicamente em elementos de código que guiam o desenvolvimento de uma aplicação, otimizando esse processo.
+Um framework funciona como uma espécie de template ou modelo que, quando utilizado, oferece certos artifícios e elementos estruturais básicos para a criação de alguma aplicação ou software.
+ex:
+* Angular
+* Vuex
+* Ionic
+* Next
+* Express
+* LoopBack
+
+==> Configurar projeto com React
+npx create-react-app <nome-projeto>
+yarn create-react-app <nome-projeto>
+
+
+==> COMPONENTES
+Componentes nada mais são do que funções que retornam um html
+Tudo e componentes dentro do react, paginas, elementos etc.
+
+==> Componentes de Classes x Funcionais
+
+==> Ciclo de Vida de um componente
+
+constructor -> 1- getDerivedStateFromProps ( obter estado derivado de props )-> 2- componentDidMount (componente Montou) -> 3- shouldComponentUpdate (deve atualizar o componente) -> 4- render (renderizar) -> 5- getSnapshotBeforeUpdate (obtenha uma foto instantânea antes da atualização) -> 6- componentDidUpdate (componente fez atualização)-> 7- componentWillUnmount (componente será desmontado)
+
+OBS:
+Por padrão, toda vez que um estado e atualizado dentro de um componente, ele é reenderizado, juntamente com os filhos desse componente
+
+==> REACT CLI (CRA)
+Create React App é um ambiente confortável para aprender React, e é a melhor maneira de começar uma single-page application em React.
+- configura ambiente para utilizar funcionalidades mais recentes do javascript
+- fornece uma experiência de desenvolvimento agradável, e otimiza a produção.
+
+-> site oficial
+create-react-app.dev
+
+==> Criar navegações com React
+$
+yarn add react-router-dom
+$
+npx create-react-app <nome>
+

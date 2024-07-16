@@ -1,0 +1,4 @@
+==>> HOOKS
+Até a versão 16.7 do React algumas funcionalidades só eram possívels de ser acessadas através de classes (como, por exemplo, do lifecycle). Apesar da possibilidade de criar componentes a partir de funções. Eles Também ajudam a organizar a lógica utilizada dentro dos componentes.
+
+Os hooks em resumo, permitem o uso de vários recursos de forma simples através de funções. Eles também ajudam a organizar a lógica utilizada dentro dos componentes.

@@ -1,0 +1,5 @@
+* funções são pequenos blocos de códigos
+* no javascript funções são como objetos, conseguimos manipular seus valores
+* objeto e uma coleção dinâmica de valores, ele agrupa valores
+* classe é a definição do que deve ser o objeto.
+* instância é uma ocorrência do objeto

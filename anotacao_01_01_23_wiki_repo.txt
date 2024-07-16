@@ -1,0 +1,9 @@
+yarn add styled-components
+
+=============================
+=> Wiki de Repositorio
+-> instalações necessárias
+- axios
+- styled components
+
+$ yarn add axios styled-components

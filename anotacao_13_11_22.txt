@@ -1,0 +1,4 @@
+* criar um servidor com http-server
+ - executar no terminal o comando 
+$
+htpp-server ./

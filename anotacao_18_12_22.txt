@@ -1,0 +1,12 @@
+==> Styled Components
+É uma bibliotea que possibilita escrever códigos css dentro do JavaScript. Com ele, pode-se criar website bonitos e funcionais. Além disso, ganhar mais agilidade e precisão no desenvolvimento web.
+
+-> INSTALLATION
+yarn add styled-components
+
+
+pseudo elemento 
+
+  &::after {
+            content
+        }

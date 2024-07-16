@@ -1,0 +1,2 @@
+useMemo = referência em variáveis (const, var, let)
+useCallback = referência de função
